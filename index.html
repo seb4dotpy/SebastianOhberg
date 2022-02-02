@@ -1,4 +1,82 @@
-<html>
-<center><h1>Sitio web en mantenimiento<h1/><center/>
-<center><a href ="https://github.com/SebastianOhberg">Puedes Visitar mi GitHub por ahora<a/><center/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Sebastian's Ohberh Portfolio">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>SebaOhberg Portfolio</title>
+</head>
+<body>
+    <header class="header-container">
+        <figure class="banner">
+            <img src="./img/BannerSmartphone.png" alt="Banner" >
+        </figure>
+
+        <figure class="main-logo">
+            <img src="./img/logo.png" alt="Logo"> 
+        </figure>
+
+        <div class="nav">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="projects">
+            <figure>
+                <img src="" alt="project-a">
+            </figure>
+            <figure>
+                <img src="" alt="project-b">
+            </figure>
+            <figure>
+                <img src="" alt="project-c">
+            </figure>
+            <figure>
+                <img src="" alt="project-d">
+            </figure>
+        </div>
+        <aside class="decription"> 
+            <figure>
+                <img src="" alt="photo">
+            </figure>
+            <div class="about-me">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, architecto eum! Quod sequi maxime unde consequatur officiis similique eaque nostrum fugiat veniam accusantium ab quisquam non distinctio, earum harum iure.</p>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div>
+            <p>Work in Progress... Sorry about troubles...</p>
+        </div>
+        <form action="" class="contact">
+            <label for="name" >
+                <span>What is your name?</span>
+                <input type="text" id="name" required>
+            </label>
+            <label for="mail" >
+                <span>What is your email?</span>
+                <input type="email" id="mail" required>
+            </label>
+            <label for="why-contact" >
+                <span>Why you want to contact me?</span>
+                <input type="text" id="why-contact" required>
+            </label>
+            <input type="submit">
+        </form>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./script/app.js"></script>
+</body>
 </html>
