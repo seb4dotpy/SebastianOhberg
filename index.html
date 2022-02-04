@@ -10,28 +10,31 @@
     <title>SebaOhberg Portfolio</title>
 </head>
 <body>
+    <script>
+        window.confirm('Puedes hacer click en diferentes instancias y tendra algunas interacciones ☺')
+    </script>
     <header class="header-container">
         <figure class="banner">
-            <img src="./img/BannerSmartphone.png" alt="Banner" >
+            <img src="./img/Banner.png" alt="Banner" >
         </figure>
 
         <figure class="main-logo">
             <img src="./img/logo.png" alt="Logo"> 
         </figure>
         <div class="nav-app" id="nav-app">
-            <div class="span">
+            <div class="span" v-on:click="toggleNav">
                 <span>⇕</span>
             </div>
            
             <div class="nav">
-                <nav class="main-nav">
+                <nav class="main-nav" v-show="showNav">
                     <ul>
                         <li><a href="#">Projects</a></li>
                         <li><a href="#">About Me</a></li>
                         <li><a href="https://www.linkedin.com/in/sebastian-ohberg-9b9a7a1a9/">LinkedIn</a></li>
                         <li><a href="https://github.com/SebastianOhberg">GitHub</a></li>
                         <li><a href="https://twitter.com/sebastianohberg">Twitter</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCZ6xFFIryBWx7dlxbmxX6dw">Youtube</a></li>
                     </ul>
                 </nav>
             </div>
@@ -39,38 +42,44 @@
         
     </header>
     <main>
-        <div class="projects">
+        <div class="projects" id="projects-app">
             <figure>
-                <img src="" alt="project-a">
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sunt illum sed, delectus incidunt quis sit repudiandae quas nisi aut magni blanditiis, beatae reprehenderit enim itaque. Ratione amet quis fugiat?</figcaption>
+                <img src="./img/MundodebitsSmatphone.png" alt="Mundo de Bits" v-on:click="toggleParagraphA">
+                <figcaption>Canal de YouTube Mundo de Bits</figcaption>
+                <p v-show="showParagraphA">
+                    Mundo de Bits, es un proyecto de divulgacion informatica y de ciberseguridad, la idea es enseñar a las personas sobre variados temas de informatica y ciberseguridad.
+                </p>
             </figure>
             <figure>
-                <img src="" alt="project-b">
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sunt illum sed, delectus incidunt quis sit repudiandae quas nisi aut magni blanditiis, beatae reprehenderit enim itaque. Ratione amet quis fugiat?</figcaption>
+                <img src="./img/GitHubSmartphone.png" alt="project-b" v-on:click="toggleParagraphB">
+                <figcaption>Mi GitHub</figcaption>
+                <p v-show="showParagraphB">
+                    Mi GutHub es un proyecto de por vida, con informacion sobre todo lo que aprendo, distribuido de forma gratuita, bajo licencias MIT.
+                    Todos el codigo de mis proyectos se ve aqui, asi que si quieres ver mi codigo, lo encontraras aqui
+                </p>
             </figure>
-            <figure>
-                <img src="" alt="project-c">
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sunt illum sed, delectus incidunt quis sit repudiandae quas nisi aut magni blanditiis, beatae reprehenderit enim itaque. Ratione amet quis fugiat?</figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="project-d">
-                <figcaption>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sunt illum sed, delectus incidunt quis sit repudiandae quas nisi aut magni blanditiis, beatae reprehenderit enim itaque. Ratione amet quis fugiat?</figcaption>
-            </figure>
-        </div>
         <aside class="decription"> 
             <figure>
-                <img src="" alt="photo">
+                <img src="./img/sebastian.jpg" alt="sebastian" v-on:click="toggleAboutMe">
+                <figcaption>Sebastian Ohberg photo - tomada con mucho sueño</figcaption>
+                <p v-show="showAboutMe">Hola! Mi nombre es Sebastian
+                    Soy Programador, tengo conocimientos en:
+                    Python, Javascript, Html, Css y Java.
+
+                    Soy apasionado por la musica y la tecnologia.
+                    Me gusta leer, ver peliculas, series o simplemente salir a caminar.
+
+                    Estoy Buscando trabajo como Programador Junior en cualquiera de estas tecnologias.
+                </p>
             </figure>
-            <div class="about-me">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, architecto eum! Quod sequi maxime unde consequatur officiis similique eaque nostrum fugiat veniam accusantium ab quisquam non distinctio, earum harum iure.</p>
-            </div>
+       
         </aside>
     </main>
     <footer>
-        <div>
-            <p>Work in Progress... Sorry about troubles...</p>
-        </div>
-        <form action="" class="contact">
+ 
+        <p>Pagina hecha por mi, con tecnologia HTML, Css y Javascript (Vue.js)</p>
+     
+        <!--<form action="" class="contact">
             <label for="name" >
                 <span>What is your name?</span>
                 <input type="text" id="name" required>
@@ -84,7 +93,7 @@
                 <input type="text" id="why-contact" required>
             </label>
             <input type="submit">
-        </form>
+        </form>-->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <script src="./script/app.js"></script>
