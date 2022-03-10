@@ -20,7 +20,7 @@
         <div class="nav">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#projects-app">Projects</a></li>
+                    <li><a href="#my-projects">Projects</a></li>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="https://www.linkedin.com/in/sebastian-ohberg-9b9a7a1a9/">LinkedIn</a></li>
                     <li><a href="https://github.com/SebastianOhberg">GitHub</a></li>
@@ -35,7 +35,7 @@
     <main>
         <div class="projects" id="projects-app">
             <div class="container">
-                <figure>
+                <figure class="about-me">
                     <img src="./img/sebastianSmartphone.jpg" alt="sebastian" v-on:click="toggleAboutMe">
                     <figcaption>Sebastian Ohberg photo - tomada con mucho sueño</figcaption>
                     <p v-show="showAboutMe">
@@ -43,7 +43,7 @@
                         <strong>Python y Javascript</strong> son las tecnologías que utilizo para construir un nuevo y mejor futuro.
                     </p>
                 </figure>
-                <figure>
+                <figure class="my-projects">
                     <img src="./img/MundodebitsSmatphone.png" alt="Mundo de Bits" v-on:click="toggleParagraphA">
                     <figcaption>Canal de YouTube Mundo de Bits</figcaption>
                     <p v-show="showParagraphA">
