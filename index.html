@@ -10,70 +10,56 @@
     <title>SebaOhberg Portfolio</title>
 </head>
 <body>
-    <script>
-        window.confirm('Puedes hacer click en diferentes instancias y tendra algunas interacciones ☺')
-    </script>
     <header class="header-container">
         <figure class="banner">
             <img src="./img/BannerSmartphone.png" alt="Banner" >
         </figure>
-
         <figure class="main-logo">
             <img src="./img/logo.png" alt="Logo"> 
         </figure>
-        <div class="nav-app" id="nav-app">
-            <div class="span" v-on:click="toggleNav">
-                <span>⇕</span>
-            </div>
-           
-            <div class="nav">
-                <nav class="main-nav" v-show="showNav">
-                    <ul>
-                        <li><a href="#projects-app">Projects</a></li>
-                        <li><a href="#about-me">About Me</a></li>
-                        <li><a href="https://www.linkedin.com/in/sebastian-ohberg-9b9a7a1a9/">LinkedIn</a></li>
-                        <li><a href="https://github.com/SebastianOhberg">GitHub</a></li>
-                        <li><a href="https://twitter.com/sebastianohberg">Twitter</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCZ6xFFIryBWx7dlxbmxX6dw">Youtube</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="nav">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#projects-app">Projects</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="https://www.linkedin.com/in/sebastian-ohberg-9b9a7a1a9/">LinkedIn</a></li>
+                    <li><a href="https://github.com/SebastianOhberg">GitHub</a></li>
+                    <li><a href="https://twitter.com/sebastianohberg">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCZ6xFFIryBWx7dlxbmxX6dw">Youtube</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
         </div>
         
     </header>
     <main>
         <div class="projects" id="projects-app">
-            <figure>
-                <img src="./img/MundodebitsSmatphone.png" alt="Mundo de Bits" v-on:click="toggleParagraphA">
-                <figcaption>Canal de YouTube Mundo de Bits</figcaption>
-                <p v-show="showParagraphA">
-                    Mundo de Bits, es un proyecto de divulgacion informatica y de ciberseguridad, la idea es enseñar a las personas sobre variados temas de informatica y ciberseguridad.
-                </p>
-            </figure>
-            <figure>
-                <img src="./img/GitHubSmartphone.png" alt="project-b" v-on:click="toggleParagraphB">
-                <figcaption>Mi GitHub</figcaption>
-                <p v-show="showParagraphB">
-                    Mi GutHub es un proyecto de por vida, con informacion sobre todo lo que aprendo, distribuido de forma gratuita, bajo licencias MIT.
-                    Todos el codigo de mis proyectos se ve aqui, asi que si quieres ver mi codigo, lo encontraras aqui
-                </p>
-            </figure>
-        <aside class="decription" id="about-me"> 
-            <figure>
-                <img src="./img/sebastianSmartphone.jpg" alt="sebastian" v-on:click="toggleAboutMe">
-                <figcaption>Sebastian Ohberg photo - tomada con mucho sueño</figcaption>
-                <p v-show="showAboutMe">Hola! Mi nombre es Sebastian
-                    Soy Programador, tengo conocimientos en:
-                    <strong>Python, Javascript, Html, Css y Java</strong>.
-
-                    Soy apasionado por la musica y la tecnologia.
-                    Me gusta leer, ver peliculas, series o simplemente salir a caminar.
-
-                    <strong>Estoy Buscando trabajo como Programador Junior</strong> en cualquiera de estas tecnologias.
-                </p>
-            </figure>
-       
-        </aside>
+            <div class="container">
+                <figure>
+                    <img src="./img/sebastianSmartphone.jpg" alt="sebastian" v-on:click="toggleAboutMe">
+                    <figcaption>Sebastian Ohberg photo - tomada con mucho sueño</figcaption>
+                    <p v-show="showAboutMe">
+                        Hola! Mi nombre es Sebastian Ohberg, Me considero un innovador, apasionado por la tecnología y un constante buscador del cambio.<br>
+                        <strong>Python y Javascript</strong> son las tecnologías que utilizo para construir un nuevo y mejor futuro.
+                    </p>
+                </figure>
+                <figure>
+                    <img src="./img/MundodebitsSmatphone.png" alt="Mundo de Bits" v-on:click="toggleParagraphA">
+                    <figcaption>Canal de YouTube Mundo de Bits</figcaption>
+                    <p v-show="showParagraphA">
+                        Mundo de Bits, es un proyecto de divulgacion informatica y de ciberseguridad, la idea es enseñar a las personas sobre variados temas de informatica y ciberseguridad.
+                    </p>
+                </figure>
+                <figure>
+                    <img src="./img/GitHubSmartphone.png" alt="project-b" v-on:click="toggleParagraphB">
+                    <figcaption>Mi GitHub</figcaption>
+                    <p v-show="showParagraphB">
+                        Mi GutHub es un proyecto de por vida, con informacion sobre todo lo que aprendo, distribuido de forma gratuita, bajo licencias MIT.
+                        Todos el codigo de mis proyectos se ve aqui, asi que si quieres ver mi codigo, lo encontraras aqui
+                    </p>
+                </figure>
+            </div>
+        </div>
     </main>
     <footer>
  

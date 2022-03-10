@@ -1,24 +1,4 @@
-new Vue ({
-
-    el: '#nav-app',
-
-    data () {
-        return{
-
-            showNav : false
-        }
-    },
-
-    methods: {
-
-        toggleNav(){
-            this.showNav = !this.showNav;
-        }
-    }
-
-})
-
-new Vue({
+new Vue({ //Show information
     el: '#projects-app',
 
     data () {
