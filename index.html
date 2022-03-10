@@ -34,31 +34,30 @@
     </header>
     <main>
         <div class="projects" id="projects-app">
-            <div class="container">
-                <figure class="about-me">
-                    <img src="./img/sebastianSmartphone.jpg" alt="sebastian" v-on:click="toggleAboutMe">
-                    <figcaption>Sebastian Ohberg photo - tomada con mucho sueño</figcaption>
-                    <p v-show="showAboutMe">
-                        Hola! Mi nombre es Sebastian Ohberg, Me considero un innovador, apasionado por la tecnología y un constante buscador del cambio.<br>
-                        <strong>Python y Javascript</strong> son las tecnologías que utilizo para construir un nuevo y mejor futuro.
-                    </p>
-                </figure>
-                <figure class="my-projects">
-                    <img src="./img/MundodebitsSmatphone.png" alt="Mundo de Bits" v-on:click="toggleParagraphA">
-                    <figcaption>Canal de YouTube Mundo de Bits</figcaption>
-                    <p v-show="showParagraphA">
-                        Mundo de Bits, es un proyecto de divulgacion informatica y de ciberseguridad, la idea es enseñar a las personas sobre variados temas de informatica y ciberseguridad.
-                    </p>
-                </figure>
-                <figure>
-                    <img src="./img/GitHubSmartphone.png" alt="project-b" v-on:click="toggleParagraphB">
-                    <figcaption>Mi GitHub</figcaption>
-                    <p v-show="showParagraphB">
-                        Mi GutHub es un proyecto de por vida, con informacion sobre todo lo que aprendo, distribuido de forma gratuita, bajo licencias MIT.
-                        Todos el codigo de mis proyectos se ve aqui, asi que si quieres ver mi codigo, lo encontraras aqui
-                    </p>
-                </figure>
-            </div>
+            <figure class="about-me" id="about-me">
+                <img src="./img/sebastianSmartphone.jpg" alt="sebastian" v-on:click="toggleAboutMe">
+                <figcaption>Sebastian Ohberg photo - tomada con mucho sueño</figcaption>
+                <p v-show="showAboutMe">
+                    Hola! Mi nombre es Sebastian Ohberg, Me considero un innovador, apasionado por la tecnología y un constante buscador del cambio.<br>
+                    <strong>Python y Javascript</strong> son las tecnologías que utilizo para construir un nuevo y mejor futuro.
+                </p>
+            </figure>
+            <figure class="my-projects" id="my-projects">
+                <img src="./img/MundodebitsSmatphone.png" alt="Mundo de Bits" v-on:click="toggleParagraphA">
+                <figcaption>Canal de YouTube Mundo de Bits</figcaption>
+                <p v-show="showParagraphA">
+                    Mundo de Bits, es un proyecto de divulgacion informatica y de ciberseguridad, la idea es enseñar a las personas sobre variados temas de informatica y ciberseguridad.
+                </p>
+            </figure>
+            <figure>
+                <img src="./img/GitHubSmartphone.png" alt="project-b" v-on:click="toggleParagraphB">
+                <figcaption>Mi GitHub</figcaption>
+                <p v-show="showParagraphB">
+                    Mi GutHub es un proyecto de por vida, con informacion sobre todo lo que aprendo, distribuido de forma gratuita, bajo licencias MIT.
+                    Todos el codigo de mis proyectos se ve aqui, asi que si quieres ver mi codigo, lo encontraras aqui
+                </p>
+            </figure>
+            
         </div>
     </main>
     <footer>
