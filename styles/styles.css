@@ -207,3 +207,16 @@ footer {
        width:800px;
    }
 }
+@media(min-width: 1200px){
+    .projects {
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .projects figure {
+        width: 400px;
+        height: 500px;
+    }
+}
