@@ -201,7 +201,7 @@ footer {
 /*Responsive*/
 @media(min-width: 800px){
    .banner{
-        width:800px;
+        max-width:800px;
    }
    .projects figure{
        width:800px;
@@ -216,7 +216,11 @@ footer {
         flex-direction: row;
     }
     .projects figure {
+
         width: 400px;
-        height: 500px;
+        height: 600px;
+    }
+    .projects figure img{
+        max-height: 500px;
     }
 }
